@@ -1,0 +1,28 @@
+/*<!--顶部区域-->*/
+.top{
+    height: 60px;
+    width: 100%;
+    background: black;
+}
+
+/*<!--广告区域-->*/
+.banner{
+    height: 860px;
+    width: 100%;
+
+
+}
+/*<!--内容区域-->*/
+.content{
+    height: 1883px;
+    width: 100%;
+
+
+}
+/*<!--底部区域-->*/
+.footer{
+    height: 396px;
+    width: 100%;
+
+
+}

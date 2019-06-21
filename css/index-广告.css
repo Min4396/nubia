@@ -1,0 +1,168 @@
+/*广告区域*/
+.banner .nav-out{
+    width: 100%;
+    height: 121px;
+    position: absolute;
+    background: white;
+    z-index: 99;
+    padding-top: 60px;
+}
+.banner .nav{
+    width: 1200px;
+    height: 121px;
+    /*绝对定位不能使用这个*/
+    /*margin: 0 auto;*/
+    /*background: pink;*/
+    background: white;
+    margin: 0 auto;
+
+    /*left: 50%;*/
+    /*margin-left: -600px;*/
+    /*background: white;*/
+
+}
+
+.banner .nav>ul{
+    width: 100%;
+    height: 100%;
+    /*background: yellow;*/
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+
+.banner .nav>ul>li{
+    width: 150px;
+    height: 100%;
+    /*background: purple;*/
+    float: left;
+    text-align: center;
+
+}
+.banner .nav>ul>li:hover{
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+.banner .nav>ul>li img{
+    width: 120px;
+    height: 80px;
+    margin-top: 13px;
+}
+.banner .nav>ul>li p{
+    color: #666;
+}
+.banner .figure{
+    width: 100%;
+    height: 600px;
+    /*background: red;*/
+    text-align: center;
+    position: relative;
+}
+.banner .figure img{
+    width: 100%;
+    /*margin: 0 -100%;*/
+}
+.banner .figure>ol{
+    width: 150px;
+    height: 20px;
+    /*background: red;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10px;
+}
+.banner .figure>ol>li{
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border: 2px solid transparent; /*透明色 */
+
+}
+.banner .figure>ol>li:hover{
+    transform: scale(1.4 ,1.4);
+    background: transparent;
+    border: 2px solid red;
+}
+
+.banner .video{
+    width: 1200px;
+    height: 250px;
+    margin: 53px auto;
+    /*background: skyblue;*/
+    /*margin-top: 55px;*/
+}
+.banner .video>ul{
+    width: 100%;
+    /*height: 100%;*/
+    /*background: yellow;*/
+    /*伸缩布局*/
+    display: flex;
+    justify-content: space-between;
+
+}
+.banner .video>ul>li{
+    float: left;
+    width: 396px;
+    height: 250px;
+    background: black;
+    /*margin-right: 3px;*/
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+}
+.banner .video>ul>li img{
+    transform: scale(1.06);
+}
+.banner .video>ul>li>img{
+    /*width: 100%;*/
+    height: 100%;
+    margin: 0 -100%;
+
+
+}
+.banner .video .video-info{
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0; /*作用：设置颜色的透明度。
+                   特点：子元素也会跟着透明*/
+
+}
+.banner .video>ul>li:hover .video-info{
+    opacity: 1;
+}
+.banner .video>ul>li:hover img{
+    animation: sport 3s 0s linear infinite ;
+    opacity: 0.5;
+
+}
+@keyframes sport{
+    20%{
+        transform: scale(1.08);
+    }
+    40%{
+        transform:scale(1.10);
+    }
+    60%{
+        transform: scale(1.12);
+    }
+    80%{
+        transform: scale(1.14);
+    }
+    100%{
+        transform: scale(1.16) ;
+    }
+}
+
+.banner .video .video-info>h3{
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
